@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_img"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/logo_margin"
+        android:layout_marginEnd="@dimen/logo_margin"
+        android:layout_marginTop="@dimen/logo_margin"
+        android:layout_marginBottom="@dimen/logo_margin"
+        android:adjustViewBounds="true"
+        android:src="@drawable/energy_eye"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/scroll_margin"
+        android:layout_marginEnd="@dimen/scroll_margin"
+        android:layout_marginTop="@dimen/scroll_margin"
+        android:layout_marginBottom="@dimen/logo_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_dino_plus_reg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_height"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@color/blue"
+                android:layout_marginBottom="@dimen/logo_margin"
+                android:typeface="sans"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:text="@string/btn_dino_reg"/>
+
+            <Button
+                android:id="@+id/btn_dino_reg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_height"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@color/blue"
+                android:layout_marginBottom="@dimen/logo_margin"
+                android:typeface="sans"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:text="@string/btn_reg"/>
+
+            <Button
+                android:id="@+id/btn_dino_conf"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_height"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@color/blue"
+                android:layout_marginBottom="@dimen/logo_margin"
+                android:typeface="sans"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:text="@string/btn_dino_conf"/>
+
+            <Button
+                android:id="@+id/btn_wifi_conf"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_height"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@color/blue"
+                android:layout_marginBottom="@dimen/logo_margin"
+                android:typeface="sans"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:text="@string/btn_wifi_conf"/>
+
+            <Button
+                android:id="@+id/btn_install_chk"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_height"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@color/blue"
+                android:layout_marginBottom="@dimen/logo_margin"
+                android:typeface="sans"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:text="@string/btn_install_chk"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
