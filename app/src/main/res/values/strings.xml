@@ -11,11 +11,12 @@
     <string name="title_activity_reg">Registrazione</string>
     <string name="dialog_reg_text">DOPO LA REGISTRAZIONE DINO POTRA RICEVERE DATI DAL CONTATORE DOPO 24-48 ORE.\nPUOI COLLEGARLO ALLA PRESAE CONFIGURARLO MA E NECESSARIO ATTENDERE PER VERIFICARNE IL FUNZIONAMENTO.</string>
     <string name="title_activity_conf">Configurazione</string>
-    <string name="btn_p1">PREMERE BREVEMENTE IL PULSANTE P1. I LED cominceranno a lampeggiare assieme.</string>
-    <string name="flight_mode">SELEZIONARE “MODALITA AEREO” sul tuo SMARTPHONE</string>
-    <string name="go_on">dopo aver clickato CONTINUA.\nselezionare la rete WIFI dalla casella a discesa.\ninserire la password di rete.\nselezionare  DHCP.\nclickare SALVA.</string>
+    <string name="btn_p1">PREMERE BREVEMENTE IL PULSANTE P1.(quello a sinistra)\nI LED cominceranno a lampeggiare assieme.</string>
+    <string name="flight_mode">SELEZIONARE “MODALITA AEREO” sul tuo SMARTPHONE e poi riattivare WIFI.</string>
+    <string name="go_on">Poi click su  CONTINUA e nella nuova finestra.\nselezionare la rete WIFI dalla casella a discesa.\ninserire la password di rete.\nclick su SALVA.</string>
     <string name="btn_go">CONTINUA</string>
     <string name="title_activity_local">DINO AMMINISTRAZIONE</string>
     <string name="btn_help">ULTERIORE AIUTO</string>
     <string name="dialog_local_text">ora DINO si riavvierà automaticamente.\nsarà pronto in un minuto.</string>
+    <string name="further_help">Se necessario selezionare IP statico.\ne inserire l’indirizzo IP per DINO.\nIn casi particolari ove l’opzione è disponibile.\nSelezionare RESET CERTIFICATI per.\nreinizializzare la comunicazione IOT.\nPer altri casi vedi manuale tecnico DINO.\n(www.connetweb.com)</string>
 </resources>

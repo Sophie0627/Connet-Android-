@@ -77,7 +77,17 @@ public class LocalActivity extends AppCompatActivity {
         btn_help.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                AlertDialog.Builder alert = new AlertDialog.Builder(LocalActivity.this);
+                alert.setTitle("ULTERIORE AIUTO");
+                alert.setMessage(R.string.further_help);
+                alert.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
 
+                    }
+                });
+                AlertDialog dialog = alert.create();
+                dialog.show();
             }
         });
 
@@ -131,11 +141,11 @@ public class LocalActivity extends AppCompatActivity {
             public void onPageStarted(WebView view, String url, Bitmap favicon) {
                 gifView.setVisibility(View.VISIBLE);
                 gifView.play();
-
+                /*
                 if(url.equals("10.10.100.100/home") || url.equals("10.10.100.10"))
                     btn_help.setVisibility(View.VISIBLE);
                 else btn_help.setVisibility(View.GONE);
-
+                 */
                 super.onPageStarted(view, url, favicon);
             }
 
@@ -186,7 +196,7 @@ public class LocalActivity extends AppCompatActivity {
     public void OnBackPressed()
     {
         AlertDialog.Builder alert = new AlertDialog.Builder(LocalActivity.this);
-        alert.setTitle("Notification");
+        alert.setTitle("Notifica");
         LayoutInflater inflater = LocalActivity.this.getLayoutInflater();
         alert.setView(inflater.inflate(R.layout.dialog_local, null))
                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
@@ -194,12 +204,7 @@ public class LocalActivity extends AppCompatActivity {
                     public void onClick(DialogInterface dialog, int which) {
                         LocalActivity.this.finish();
                     }
-                }).setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-
-            }
-        });
+                });
 
         AlertDialog dialog = alert.create();
         dialog.show();

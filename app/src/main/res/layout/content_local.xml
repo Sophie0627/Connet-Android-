@@ -23,7 +23,6 @@
         android:textColor="@color/white"
         android:textStyle="bold"
         android:textAllCaps="true"
-        android:visibility="gone"
         android:text="@string/btn_help" />
 
     <com.cunoraz.gifview.library.GifView

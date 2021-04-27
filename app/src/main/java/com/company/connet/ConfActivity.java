@@ -68,17 +68,17 @@ public class ConfActivity extends AppCompatActivity {
                 if(!isAirplaneModeOn())
                 {
                     AlertDialog.Builder alert = new AlertDialog.Builder(ConfActivity.this);
-                    alert.setTitle("Alert");
-                    alert.setMessage("The Flight Mode isn't activated now. Do you want to continue?");
-                    alert.setPositiveButton("Continue", new DialogInterface.OnClickListener() {
+                    alert.setTitle("Attenzione");
+                    alert.setMessage("La modalità “aereo” non è attiva. INDIETRO CONTINUA?");
+                    alert.setPositiveButton("CONTINUA", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
                             if(!isWifiOn())
                             {
                                 AlertDialog.Builder alert_wifi = new AlertDialog.Builder(ConfActivity.this);
-                                alert_wifi.setTitle("Alert");
-                                alert_wifi.setMessage("The WiFi is turned off. Please turn it on.");
-                                alert_wifi.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                                alert_wifi.setTitle("Attenzione");
+                                alert_wifi.setMessage("WIFI non attivo. Attivare WIFI per procedure.");
+                                alert_wifi.setNegativeButton("OK", new DialogInterface.OnClickListener() {
                                     @Override
                                     public void onClick(DialogInterface dialog, int which) {
 
@@ -93,7 +93,7 @@ public class ConfActivity extends AppCompatActivity {
                                 startActivity(intent);
                             }
                         }
-                    }).setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                    }).setNegativeButton("NO", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
 
@@ -106,9 +106,9 @@ public class ConfActivity extends AppCompatActivity {
                     if(!isWifiOn())
                     {
                         AlertDialog.Builder alert_wifi = new AlertDialog.Builder(ConfActivity.this);
-                        alert_wifi.setTitle("Alert");
-                        alert_wifi.setMessage("The WiFi is turned off. Please turn it on.");
-                        alert_wifi.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                        alert_wifi.setTitle("Attenzione");
+                        alert_wifi.setMessage("WIFI non attivo. Attivare WIFI per procedure.");
+                        alert_wifi.setNegativeButton("OK", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
 
@@ -131,14 +131,14 @@ public class ConfActivity extends AppCompatActivity {
     public void OnBackPressed()
     {
         AlertDialog.Builder alert = new AlertDialog.Builder(ConfActivity.this);
-        alert.setTitle("Alert");
-        alert.setMessage("Do you really go back to Home?");
-        alert.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+        alert.setTitle("Attenzione");
+        alert.setMessage("Uscire e andare alla prima pagina?");
+        alert.setPositiveButton("SI", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 ConfActivity.this.finish();
             }
-        }).setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+        }).setNegativeButton("NO", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
 

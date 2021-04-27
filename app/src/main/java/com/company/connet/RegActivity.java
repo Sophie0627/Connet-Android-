@@ -91,9 +91,9 @@ public class RegActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 AlertDialog.Builder alert = new AlertDialog.Builder(RegActivity.this);
-                alert.setTitle("Alert");
-                alert.setMessage("Do you really want to exit?");
-                alert.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                alert.setTitle("Attenzione");
+                alert.setMessage("Vuoi davvero uscire?");
+                alert.setPositiveButton("SI", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         Intent intent = new Intent(RegActivity.this, MainActivity.class);
@@ -101,7 +101,7 @@ public class RegActivity extends AppCompatActivity {
                         intent.putExtra("EXIT", true);
                         startActivity(intent);
                     }
-                }).setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                }).setNegativeButton("NO", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
 
@@ -192,7 +192,7 @@ public class RegActivity extends AppCompatActivity {
     {
         if(pageID < 3) {
             AlertDialog.Builder alert = new AlertDialog.Builder(RegActivity.this);
-            alert.setTitle("Notification");
+            alert.setTitle("Notifica");
             LayoutInflater inflater = RegActivity.this.getLayoutInflater();
             alert.setView(inflater.inflate(R.layout.dialog_registration, null))
                     .setPositiveButton("OK", new DialogInterface.OnClickListener() {
@@ -200,12 +200,7 @@ public class RegActivity extends AppCompatActivity {
                         public void onClick(DialogInterface dialog, int which) {
                             RegActivity.this.finish();
                         }
-                    }).setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-
-                }
-            });
+                    });
 
             /*
             CarouselView carouselView;
