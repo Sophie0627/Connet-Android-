@@ -12,7 +12,7 @@
     <string name="dialog_reg_text">DOPO LA REGISTRAZIONE DINO POTRA RICEVERE DATI DAL CONTATORE DOPO 24-48 ORE.\nPUOI COLLEGARLO ALLA PRESAE CONFIGURARLO MA E NECESSARIO ATTENDERE PER VERIFICARNE IL FUNZIONAMENTO.</string>
     <string name="title_activity_conf">Configurazione</string>
     <string name="btn_p1">PREMERE BREVEMENTE IL PULSANTE P1.(quello a sinistra)\nI LED cominceranno a lampeggiare assieme.</string>
-    <string name="flight_mode">SELEZIONARE “MODALITA AEREO” sul tuo SMARTPHONE e poi riattivare WIFI.</string>
+    <string name="flight_mode">SELEZIONARE “MODALITA AEREO” sul tuo SMARTPHONE e poi riattivare WIFI. </string>
     <string name="go_on">Poi click su  CONTINUA e nella nuova finestra.\nselezionare la rete WIFI dalla casella a discesa.\ninserire la password di rete.\nclick su SALVA.</string>
     <string name="btn_go">CONTINUA</string>
     <string name="title_activity_local">DINO AMMINISTRAZIONE</string>

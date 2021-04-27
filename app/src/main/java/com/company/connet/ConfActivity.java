@@ -4,6 +4,8 @@ import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.wifi.WifiManager;
 import android.os.Build;
 import android.os.Bundle;
@@ -17,9 +19,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.provider.Settings;
+import android.text.Spannable;
+import android.text.SpannableStringBuilder;
+import android.text.style.ImageSpan;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class ConfActivity extends AppCompatActivity {
@@ -60,6 +66,12 @@ public class ConfActivity extends AppCompatActivity {
                 break;
             default:
         }
+
+        TextView flight_txt = findViewById(R.id.flight_txt);
+        SpannableStringBuilder ssb = new SpannableStringBuilder(getText(R.string.flight_mode) + "   ");
+        Bitmap flight_img = BitmapFactory.decodeResource(getResources(), R.drawable.flight);
+        ssb.setSpan(new ImageSpan(getApplicationContext(), flight_img), ssb.length() - 1, ssb.length(), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+        flight_txt.setText(ssb, TextView.BufferType.SPANNABLE);
 
         btn_go = findViewById(R.id.btn_go);
         btn_go.setOnClickListener(new View.OnClickListener() {
