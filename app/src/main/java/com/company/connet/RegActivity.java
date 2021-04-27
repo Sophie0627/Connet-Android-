@@ -53,15 +53,15 @@ public class RegActivity extends AppCompatActivity {
         pageID = getIntent().getIntExtra("id", 0);
         switch (pageID) {
             case 1:
-                getSupportActionBar().setTitle("DINO + REGISTRATION");
+                getSupportActionBar().setTitle("REGISTRAZIONE DINO+");
                 url = "https://www.connetcontrolcenter.com/DinoPlus/";
                 break;
             case 2:
-                getSupportActionBar().setTitle("DINO REGISTRATION");
+                getSupportActionBar().setTitle("REGISTRAZIONE DINO");
                 url = "https://www.connetcontrolcenter.com/Dino/";
                 break;
             case 3:
-                getSupportActionBar().setTitle("INSTALLATION CHECK");
+                getSupportActionBar().setTitle("VERIFICA INSTALLAZIONE");
                 url = "https://www.connetcontrolcenter.com/DinoInstaller/";
                 break;
             default:

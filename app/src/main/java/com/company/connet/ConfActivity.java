@@ -53,10 +53,10 @@ public class ConfActivity extends AppCompatActivity {
         pageID = getIntent().getIntExtra("id", 0);
         switch(pageID) {
             case 1:
-                getSupportActionBar().setTitle("DINO + CONFIGURATION");
+                getSupportActionBar().setTitle("CONFIGURAZIONE DINO+");
                 break;
             case 2:
-                getSupportActionBar().setTitle("DINO WIFI CONFIGURATION");
+                getSupportActionBar().setTitle("CONFIGURAZIONE DINO WIFI");
                 break;
             default:
         }
